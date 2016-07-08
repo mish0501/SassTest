@@ -1,0 +1,103 @@
+section#about
+  padding-top: 20px
+  max-width: 980px
+  margin: 0 auto
+  min-height: 100vh
+
+  h3
+    font:
+      size: 40px
+      weight: 700
+    text-align: center
+    text-transform: uppercase
+    color: $teal
+
+  #avatar
+    +size(350px)
+    margin: 10px auto 20px
+    border: 5px solid $teal
+    border-radius: 50%
+    background:
+      color: pink
+
+  p
+    font:
+      size: 24px
+      weight: 100
+    padding: 0 20px
+    text-align: center
+    max-width: 800px
+    margin: 0 auto 20px
+
+  hr
+    width: 20%
+    height: 2px
+    background:
+      color: $silver
+    display: block
+    margin: 20px auto
+
+  #social
+    height: 50px
+    padding: 10px 10px 20px
+    max-width: 500px
+    margin: 0 auto
+    display: flex
+    justify-content: space-between
+
+    a
+      background-color: $teal
+      border-radius: 50%
+      box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2)
+
+      span
+        display: block
+        +size(50px)
+        text-align: center
+        line-height: 50px
+        font-size: 2em
+        color: $white
+
+      .facebook::after
+        content: '\f09a'
+
+      .twitter::after
+        content: '\f099'
+
+      .instagram::after
+        content: '\f16d'
+
+      .google-plus::after
+        content: '\f0d5'
+
+      .git-hub::after
+        content: '\f09b'
+
+      &:hover
+        background-color: darken($teal, 10)
+
+@media (max-width:700px)
+  section#about
+    #avatar
+      +size(200px)
+
+@media (max-width:320px)
+  section#about
+    #social
+      a
+        +size(40px)
+
+        span
+          +size(40px)
+          font-size: 1.5em
+          line-height: 40px
+
+@media (min-width:2560px)
+  section#about
+    p
+      letter-spacing: 2px
+
+@media (max-width:1024px)
+  section#about
+    h3
+      margin: 20px
