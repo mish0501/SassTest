@@ -2631,13 +2631,14 @@ section#header {
   section#header header nav.open {
     transform: translateX(0); }
   section#header header nav {
-    height: 100vh;
+    height: 100%;
     background-color: #fff;
     width: 75%;
     position: fixed;
     right: 0px;
     padding: 0;
     z-index: 1;
+    box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.2);
     -webkit-transform: translateX(100%);
     -moz-transform: translateX(100%);
     -ms-transform: translateX(100%);
@@ -2653,7 +2654,7 @@ section#header {
       section#header header nav a::after {
         content: "";
         height: 2px;
-        width: 35%;
+        width: 50%;
         background-color: #7FDBFF;
         margin: 5px auto 10px;
         display: block;
@@ -2663,7 +2664,7 @@ section#header {
       section#header header nav a:hover {
         color: #39CCCC; }
         section#header header nav a:hover::after {
-          width: 50%; }
+          width: 75%; }
     section#header header nav i {
       display: block !important;
       height: 50px;
@@ -2714,7 +2715,7 @@ section#about {
     height: 350px;
     width: 350px;
     margin: 10px auto 20px;
-    border: 5px solid #ddd;
+    border: 5px solid #39CCCC;
     border-radius: 50%;
     background-color: pink; }
   section#about p {
