@@ -11,10 +11,11 @@ section#about
     text-align: center
     text-transform: uppercase
     color: $teal
+    margin-bottom: 20px
 
   #avatar
     +size(350px)
-    margin: 10px auto 20px
+    margin: 0px auto 20px
     border: 5px solid $teal
     border-radius: 50%
     background:
@@ -30,7 +31,7 @@ section#about
     margin: 0 auto 20px
 
   hr
-    width: 20%
+    width: 30%
     height: 2px
     background:
       color: $silver
@@ -46,8 +47,8 @@ section#about
     justify-content: space-between
 
     a
-      background-color: $teal
       border-radius: 50%
+      overflow: hidden
       box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2)
 
       span
@@ -58,20 +59,30 @@ section#about
         font-size: 2em
         color: $white
 
-      .facebook::after
-        content: '\f09a'
+      .facebook
+        background-color: $facebook
+        &::after
+          content: '\f09a'
 
-      .twitter::after
-        content: '\f099'
+      .twitter
+        background-color: $twitter
+        &::after
+          content: '\f099'
 
-      .instagram::after
-        content: '\f16d'
+      .instagram
+        background-color: $instagram
+        &::after
+          content: '\f16d'
 
-      .google-plus::after
-        content: '\f0d5'
+      .google-plus
+        background-color: $google-plus
+        &::after
+          content: '\f0d5'
 
-      .git-hub::after
-        content: '\f09b'
+      .github
+        background-color: $github
+        &::after
+          content: '\f09b'
 
       &:hover
         background-color: darken($teal, 10)

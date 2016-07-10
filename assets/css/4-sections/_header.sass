@@ -43,7 +43,7 @@ section#header
         color: $white
 
         &:hover
-          color: $silver
+          color: rgb(232, 232, 232)
 
       span
         display: none
@@ -115,6 +115,7 @@ section#header
     header
       nav.open
         transform: translateX(0)
+        box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.2)
 
       nav
         height: 100%
@@ -124,7 +125,6 @@ section#header
         right: 0px
         padding: 0
         z-index: 1
-        box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.2)
         +transform(translateX(100%))
         +transition(transform, 300ms, ease-in)
 

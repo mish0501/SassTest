@@ -2545,7 +2545,7 @@ section#header {
         text-align: center;
         color: #fff; }
         section#header header nav a:hover {
-          color: #ddd; }
+          color: #e8e8e8; }
       section#header header nav span {
         display: none; }
   section#header h1 {
@@ -2629,7 +2629,8 @@ section#header {
     transform: translateY(-2px); } }
 @media (max-width: 640px) {
   section#header header nav.open {
-    transform: translateX(0); }
+    transform: translateX(0);
+    box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.2); }
   section#header header nav {
     height: 100%;
     background-color: #fff;
@@ -2638,7 +2639,6 @@ section#header {
     right: 0px;
     padding: 0;
     z-index: 1;
-    box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.2);
     -webkit-transform: translateX(100%);
     -moz-transform: translateX(100%);
     -ms-transform: translateX(100%);
@@ -2710,11 +2710,12 @@ section#about {
     font-weight: 700;
     text-align: center;
     text-transform: uppercase;
-    color: #39CCCC; }
+    color: #39CCCC;
+    margin-bottom: 20px; }
   section#about #avatar {
     height: 350px;
     width: 350px;
-    margin: 10px auto 20px;
+    margin: 0px auto 20px;
     border: 5px solid #39CCCC;
     border-radius: 50%;
     background-color: pink; }
@@ -2726,7 +2727,7 @@ section#about {
     max-width: 800px;
     margin: 0 auto 20px; }
   section#about hr {
-    width: 20%;
+    width: 30%;
     height: 2px;
     background-color: #ddd;
     display: block;
@@ -2739,8 +2740,8 @@ section#about {
     display: flex;
     justify-content: space-between; }
     section#about #social a {
-      background-color: #39CCCC;
       border-radius: 50%;
+      overflow: hidden;
       box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); }
       section#about #social a span {
         display: block;
@@ -2750,16 +2751,26 @@ section#about {
         line-height: 50px;
         font-size: 2em;
         color: #fff; }
-      section#about #social a .facebook::after {
-        content: ""; }
-      section#about #social a .twitter::after {
-        content: ""; }
-      section#about #social a .instagram::after {
-        content: ""; }
-      section#about #social a .google-plus::after {
-        content: ""; }
-      section#about #social a .git-hub::after {
-        content: ""; }
+      section#about #social a .facebook {
+        background-color: #3b5999; }
+        section#about #social a .facebook::after {
+          content: ""; }
+      section#about #social a .twitter {
+        background-color: #55acee; }
+        section#about #social a .twitter::after {
+          content: ""; }
+      section#about #social a .instagram {
+        background-color: #3f729b; }
+        section#about #social a .instagram::after {
+          content: ""; }
+      section#about #social a .google-plus {
+        background-color: #dd4b39; }
+        section#about #social a .google-plus::after {
+          content: ""; }
+      section#about #social a .github {
+        background-color: #2f2f2f; }
+        section#about #social a .github::after {
+          content: ""; }
       section#about #social a:hover {
         background-color: #2ba7a7; }
 
@@ -2782,5 +2793,54 @@ section#about {
 @media (max-width: 1024px) {
   section#about h3 {
     margin: 20px; } }
+section#projects {
+  padding-top: 20px;
+  margin: 0 auto;
+  min-height: 100vh;
+  background-color: #ddd; }
+  section#projects h3 {
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    color: #39CCCC;
+    margin-bottom: 20px; }
+  section#projects .projects-wrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 980px;
+    margin: 0 auto; }
+    section#projects .projects-wrap .project-wrap {
+      width: 30%;
+      height: 200px;
+      display: flex;
+      flex-direction: column;
+      background-color: #fff;
+      padding: 2px;
+      margin-bottom: 20px; }
+      section#projects .projects-wrap .project-wrap header {
+        height: 35%;
+        width: 100%;
+        background-image: url("../img/header1.jpg");
+        background-position: center;
+        background-size: cover; }
+      section#projects .projects-wrap .project-wrap .content {
+        flex-grow: 1;
+        padding-top: 10px;
+        font-size: 14px;
+        font-weight: 300; }
+        section#projects .projects-wrap .project-wrap .content strong {
+          color: #7FDBFF;
+          font-weight: 700;
+          text-decoration: underline; }
+      section#projects .projects-wrap .project-wrap footer {
+        width: 100%;
+        height: 15%;
+        text-align: center;
+        line-height: 2em;
+        cursor: pointer;
+        text-decoration: underline; }
 
 /*# sourceMappingURL=main.css.map */
