@@ -3,6 +3,7 @@ $( document ).ready(function() {
   $("#header h1").fitText(1, { minFontSize: '20px', maxFontSize: '72px' });
   $("h3").fitText(1, { minFontSize: '20px', maxFontSize: '40px' });
   $("section#about p").fitText(1, { minFontSize: '12px', maxFontSize: '24px' });
+  $(".project-wrap header span").fitText(1, { minFontSize: '20px', maxFontSize: '30px' });
 
   $(".nav-toggle").on('click', function () {
     $('nav').toggleClass('open');
