@@ -1,0 +1,114 @@
+section#projects
+  padding-top: 20px
+  margin: 0 auto
+  min-height: 100vh
+  background-color: $aqua
+
+  h3
+    font:
+      size: 40px
+      weight: 700
+    text-align: center
+    text-transform: uppercase
+    color: $white
+    margin-bottom: 40px
+
+  .projects-wrap
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: space-between
+    max-width: 980px
+    margin: 0 auto
+    padding: 0 10px
+
+    .project-wrap
+      width: 30%
+      height: 300px
+      display: flex
+      flex-direction: column
+      background-color: $white
+      margin-bottom: 20px
+      border-radius: 5px
+      border: 2px solid $white
+      overflow: hidden
+
+      header
+        height: 135px
+        width: 100%
+        position: relative
+
+        img
+          width: 100%
+          height: 100%
+          z-index: -1
+
+        span
+          color: $white
+          @extend %small-bold
+          font-size: 30px
+          display: block
+          text-align: center
+          padding: 50px 0 0
+          position: absolute
+          top: 0
+          width: 100%
+
+      .content
+        flex-grow: 1
+        padding: 10px 5px 0
+        font:
+          size: 14px
+          weight: 300
+
+        strong
+          color: $aqua
+          font:
+            weight: 700
+
+      footer
+        width: 100%
+        height: 45px
+        text-align: center
+        cursor: pointer
+        text-decoration: underline
+        line-height: 45px
+        background-color: $silver
+        color: $white
+        border-radius: 0 0 5px 5px
+        font-size: 18px
+
+@media (max-width:790px)
+  section#projects
+    .projects-wrap
+      flex-direction: column
+      padding: 0 10px
+
+      .project-wrap
+        width: 100%
+        height: 550px
+        margin-left: -2px
+
+        header
+          height: 50%
+
+          span
+            padding-top: 115px
+            font-size: 40px
+        .content
+          font:
+            size: 20px
+            weight: 400
+
+@media (max-width:320px)
+  section#projects
+    .projects-wrap
+
+      .project-wrap
+        height: 350px
+
+        header
+          height: 25%
+
+          span
+            padding-top: 25px
