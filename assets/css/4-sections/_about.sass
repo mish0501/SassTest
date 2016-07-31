@@ -5,16 +5,11 @@ section#about
   min-height: 100vh
 
   h3
-    font:
-      size: 40px
-      weight: 700
-    text-align: center
-    text-transform: uppercase
     color: $teal
     margin-bottom: 20px
 
   #avatar
-    +size(350px)
+    +size(250px)
     margin: 0px auto 20px
     border: 5px solid $teal
     border-radius: 50%
@@ -90,7 +85,8 @@ section#about
 @media (max-width:700px)
   section#about
     #avatar
-      +size(200px)
+      +size(125px)
+      border: 2px solid $teal
 
 @media (max-width:320px)
   section#about
