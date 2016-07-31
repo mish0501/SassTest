@@ -1,0 +1,57 @@
+section#contacts
+  padding-top: 20px
+  margin: 0 auto
+  min-height: 100vh
+  background-color: $aqua
+
+  h3
+    color: $white
+    margin-bottom: 40px
+
+  form
+    margin: 0 auto
+    max-width: 980px
+    display: flex
+    flex-direction: column
+
+    input, textarea
+      padding: 10px 5px
+      margin: 10px
+      border: none
+      border-bottom: 5px solid $teal
+
+    .row
+      display: flex
+      flex-direction: row
+      justify-content: space-between
+
+      input
+        flex-grow: 1
+
+    input[type='submit']
+      margin-top: 10px
+      background:
+        color: $teal
+      width: 20%
+      float: right
+      border: none
+      padding: 0
+      color: $white
+      position: relative
+      right: 0
+
+      &:hover
+        background-color: #32b5b5
+        color: $silver
+
+      &:active
+        box-shadow: inset 2px 2px 10px $black
+
+@media (max-width:600px)
+  section#contacts
+    form
+      .row
+        flex-direction: column
+
+      input[type="submit"]
+        width: 40%
